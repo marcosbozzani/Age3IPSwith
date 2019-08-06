@@ -1,0 +1,22 @@
+﻿<Window x:Class="Age3IPSwith.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Age3IPSwith"
+        mc:Ignorable="d"
+        Title="Age3 IP Switch" Height="141.576" Width="299.092" Initialized="Window_Initialized" ResizeMode="CanMinimize">
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Name="Info" />
+            </StatusBarItem>
+        </StatusBar>
+        <Grid>
+            <ComboBox x:Name="IpCombobox" HorizontalAlignment="Left" Margin="82,14,0,0" VerticalAlignment="Top" Width="188"/>
+            <Label Content="IP Address" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="195,47,0,0" VerticalAlignment="Top" Width="75" Click="SaveButton_Click"/>
+            <Button x:Name="ReloadButton" Content="Reload" HorizontalAlignment="Left" Margin="115,47,0,0" VerticalAlignment="Top" Width="75" Click="ReloadButton_Click"/>
+        </Grid>
+    </DockPanel>
+</Window>
